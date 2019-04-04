@@ -22,82 +22,16 @@ public class GUI extends Application
     * Labels
     */
    @FXML
-   Label lblInputBottom;
-
-   @FXML
-   Label lblInputMiddle;
-
-   @FXML
-   Label lblInputTop;
-
-   @FXML
-   Label lblError;
+   Label lblInputBottom, lblInputMiddle, lblInputTop, lblError;
 
    /*
     * Buttons
     */
    @FXML
-   Button btnDivide;
-
-   @FXML
-   Button btnMultiply;
-
-   @FXML
-   Button btnSubtract;
-
-   @FXML
-   Button btnAdd;
-
-   @FXML
-   Button btnEnter;
-
-   @FXML
-   Button btnClear;
-
-   @FXML
-   Button btnSwap;
-
-   @FXML
-   Button btnRollDown;
-
-   @FXML
-   Button btnRollUp;
-
-   @FXML
-   Button btnDrop;
-
-   @FXML
-   Button btnDot;
-
-   @FXML
-   Button btnZero;
-
-   @FXML
-   Button btnOne;
-
-   @FXML
-   Button btnTwo;
-
-   @FXML
-   Button btnThree;
-
-   @FXML
-   Button btnFour;
-
-   @FXML
-   Button btnFive;
-
-   @FXML
-   Button btnSix;
-
-   @FXML
-   Button btnSeven;
-
-   @FXML
-   Button btnEight;
-
-   @FXML
-   Button btnNine;
+   Button btnDivide, btnMultiply, btnSubtract, btnAdd, btnEnter, btnClear, btnSwap, btnRollDown,
+          btnRollUp, btnDrop, btnDot, btnZero, btnOne, btnTwo, btnThree, btnFour, btnFive,
+          btnSix, btnSeven, btnEight, btnNine, btnExponent, btnSqrt, btnFactorial, btnPi,
+          btnSin, btnCos, btnTan, btnLn, btnLog, btnMod, btnDegToRadians, btnRadToDegrees, btnFtToSmoots;
 
 
    /*
@@ -384,7 +318,7 @@ public class GUI extends Application
     */
    public void handleExponent(ActionEvent ae)
    {
-      errorCheck("You need another item to exponentiate");
+      errorCheck("Missing second item (exponent)");
       double a = operatorCheck();
       double b = stack.pop();
       double temp = Math.pow(b, a);
@@ -485,6 +419,19 @@ public class GUI extends Application
       errorCheck("");
       double a = operatorCheck();
       double temp = Math.log(a);
+      stack.push(temp);
+      updateDisplayDown("" + temp);
+      numWasPressed = false;
+   }
+
+   /**
+    * Handles the log (log base 10) button
+    */
+   public void handleLog(ActionEvent ae)
+   {
+      errorCheck("");
+      double a = operatorCheck();
+      double temp = Math.log10(a);
       stack.push(temp);
       updateDisplayDown("" + temp);
       numWasPressed = false;
