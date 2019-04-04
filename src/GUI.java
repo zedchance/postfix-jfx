@@ -22,7 +22,7 @@ public class GUI extends Application
     * Labels
     */
    @FXML
-   Label lblInputBottom, lblInputMiddle, lblInputTop, lblError;
+   Label lblInputBottom, lblInputMiddle, lblInputTop, lblError, lblMemory;
 
    /*
     * Buttons
@@ -32,13 +32,14 @@ public class GUI extends Application
           btnRollUp, btnDrop, btnDot, btnZero, btnOne, btnTwo, btnThree, btnFour, btnFive,
           btnSix, btnSeven, btnEight, btnNine, btnExponent, btnSqrt, btnFactorial, btnPi,
           btnSin, btnCos, btnTan, btnLn, btnLog, btnMod, btnDegToRadians, btnRadToDegrees, btnFtToSmoots,
-          btnPercent, btnNegate, btnMc, btnMr, btnMplus, btnMminus;
+          btnPercent, btnNegate, btnMemClear, btnMemRecall, btnMemAdd, btnMemSubtract;
 
 
    /*
     * Fields
     */
    Stack<Double> stack = new Stack<>();
+   double memory = 0;
    boolean numWasPressed = false;
 
    public void start(Stage window) throws IOException
@@ -515,6 +516,80 @@ public class GUI extends Application
       double temp = a * -1.0;
       stack.push(temp);
       updateDisplayDown("" + temp);
+      numWasPressed = false;
+   }
+
+   /**
+    * Memory check (decides whether to parse or peek)
+    * (factored out)
+    */
+   private double memoryCheck()
+   {
+      if (numWasPressed || stack.size() == 0)
+      {
+         double temp = Double.parseDouble(lblInputBottom.getText());
+         stack.push(temp);
+         return temp;
+      }
+      else
+      {
+         return stack.peek();
+      }
+   }
+
+   /**
+    * Updates the memory display
+    */
+   public void updateMemoryDisplay()
+   {
+      if (memory == 0)
+      {
+         lblMemory.setText("");
+      }
+      else
+      {
+         lblMemory.setText("M: " + memory);
+      }
+   }
+
+   /**
+    * Handles the memory clear (mc) button
+    */
+   public void handleMemClear(ActionEvent ae)
+   {
+      memory = 0;
+      updateMemoryDisplay();
+   }
+
+   /**
+    * Handles the memory add (m+) button
+    */
+   public void handleMemAdd(ActionEvent ae)
+   {
+      double temp = memoryCheck();
+      memory += temp;
+      updateMemoryDisplay();
+      numWasPressed = false;
+   }
+
+   /**
+    * Handles the memory subtract (m-) button
+    */
+   public void handleMemSubtract(ActionEvent ae)
+   {
+      double temp = memoryCheck();
+      memory -= temp;
+      updateMemoryDisplay();
+      numWasPressed = false;
+   }
+
+   /**
+    * Handles the memory recall (mr) button
+    */
+   public void handleMemRecall(ActionEvent ae)
+   {
+      stack.push(memory);
+      updateDisplay();
       numWasPressed = false;
    }
 

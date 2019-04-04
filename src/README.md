@@ -45,3 +45,4 @@
 - ANS Button (on PostfixGUI.java)
 - Background image
 - Sound effects
+- Memory

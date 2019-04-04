@@ -7,15 +7,15 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI">
    <children>
-      <Label fx:id="lblInputBottom" alignment="CENTER_RIGHT" layoutX="87.0" layoutY="89.0" prefHeight="17.0" prefWidth="314.0" text="0">
+      <Label fx:id="lblInputBottom" alignment="CENTER_RIGHT" layoutX="87.0" layoutY="81.0" prefHeight="17.0" prefWidth="314.0" text="0">
          <font>
             <Font size="24.0" />
          </font></Label>
-      <Label fx:id="lblInputMiddle" alignment="CENTER_RIGHT" layoutX="87.0" layoutY="58.0" prefHeight="17.0" prefWidth="314.0">
+      <Label fx:id="lblInputMiddle" alignment="CENTER_RIGHT" layoutX="87.0" layoutY="50.0" prefHeight="17.0" prefWidth="314.0">
          <font>
             <Font size="24.0" />
          </font></Label>
-      <Label fx:id="lblInputTop" alignment="CENTER_RIGHT" layoutX="87.0" layoutY="26.0" prefHeight="17.0" prefWidth="314.0">
+      <Label fx:id="lblInputTop" alignment="CENTER_RIGHT" layoutX="87.0" layoutY="18.0" prefHeight="17.0" prefWidth="314.0">
          <font>
             <Font size="24.0" />
          </font></Label>
@@ -94,7 +94,7 @@
             <Font size="20.0" />
          </font>
       </Button>
-      <Label fx:id="lblError" layoutX="16.0" layoutY="13.0" prefHeight="17.0" prefWidth="0.0" textFill="RED" />
+      <Label fx:id="lblError" layoutX="16.0" layoutY="13.0" prefHeight="17.0" prefWidth="281.0" textFill="RED" />
       <Button fx:id="btnClear" layoutX="243.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleClear" prefHeight="47.0" prefWidth="59.0" text="C">
          <font>
             <Font size="20.0" />
@@ -179,25 +179,26 @@
             <Font size="20.0" />
          </font>
       </Button>
-      <Button layoutX="184.0" layoutY="135.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="59.0" text="mr">
+      <Button fx:id="btnMemRecall" layoutX="184.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleMemRecall" prefHeight="47.0" prefWidth="59.0" text="mr">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button layoutX="125.0" layoutY="135.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="59.0" text="m-">
+      <Button fx:id="btnMemSubtract" layoutX="125.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleMemSubtract" prefHeight="47.0" prefWidth="59.0" text="m-">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button layoutX="66.0" layoutY="135.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="59.0" text="m+">
+      <Button fx:id="btnMemAdd" layoutX="66.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleMemAdd" prefHeight="47.0" prefWidth="59.0" text="m+">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button layoutX="7.0" layoutY="135.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="59.0" text="mc">
+      <Button fx:id="btnMemClear" layoutX="7.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleMemClear" prefHeight="47.0" prefWidth="59.0" text="mc">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
+      <Label fx:id="lblMemory" layoutX="8.0" layoutY="114.0" prefHeight="17.0" prefWidth="234.0" />
    </children>
 </Pane>
