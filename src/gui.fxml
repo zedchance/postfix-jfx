@@ -7,9 +7,18 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI">
    <children>
-      <Label fx:id="lblInputBottom" alignment="CENTER_RIGHT" layoutX="89.0" layoutY="95.0" prefHeight="17.0" prefWidth="314.0" text="0" />
-      <Label fx:id="lblInputMiddle" alignment="CENTER_RIGHT" layoutX="89.0" layoutY="64.0" prefHeight="17.0" prefWidth="314.0" />
-      <Label fx:id="lblInputTop" alignment="CENTER_RIGHT" layoutX="89.0" layoutY="32.0" prefHeight="17.0" prefWidth="314.0" />
+      <Label fx:id="lblInputBottom" alignment="CENTER_RIGHT" layoutX="87.0" layoutY="89.0" prefHeight="17.0" prefWidth="314.0" text="0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="lblInputMiddle" alignment="CENTER_RIGHT" layoutX="87.0" layoutY="58.0" prefHeight="17.0" prefWidth="314.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="lblInputTop" alignment="CENTER_RIGHT" layoutX="87.0" layoutY="26.0" prefHeight="17.0" prefWidth="314.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
       <Button fx:id="btnDivide" layoutX="420.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleDivide" prefHeight="47.0" prefWidth="59.0" text="/">
          <font>
             <Font size="20.0" />
@@ -158,6 +167,36 @@
       <Button fx:id="btnFtToSmoots" layoutX="7.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleFeetToSmoots" prefHeight="47.0" prefWidth="118.0" text="Ft &gt; Smoots" textOverrun="CLIP">
          <font>
             <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNegate" layoutX="302.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleNegate" prefHeight="47.0" prefWidth="59.0" text="+/-">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPercent" layoutX="361.0" layoutY="135.0" mnemonicParsing="false" onAction="#handlePercent" prefHeight="47.0" prefWidth="59.0" text="\%">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="184.0" layoutY="135.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="59.0" text="mr">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="125.0" layoutY="135.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="59.0" text="m-">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="66.0" layoutY="135.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="59.0" text="m+">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="7.0" layoutY="135.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="59.0" text="mc">
+         <font>
+            <Font size="20.0" />
          </font>
       </Button>
    </children>

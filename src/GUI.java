@@ -31,7 +31,8 @@ public class GUI extends Application
    Button btnDivide, btnMultiply, btnSubtract, btnAdd, btnEnter, btnClear, btnSwap, btnRollDown,
           btnRollUp, btnDrop, btnDot, btnZero, btnOne, btnTwo, btnThree, btnFour, btnFive,
           btnSix, btnSeven, btnEight, btnNine, btnExponent, btnSqrt, btnFactorial, btnPi,
-          btnSin, btnCos, btnTan, btnLn, btnLog, btnMod, btnDegToRadians, btnRadToDegrees, btnFtToSmoots;
+          btnSin, btnCos, btnTan, btnLn, btnLog, btnMod, btnDegToRadians, btnRadToDegrees, btnFtToSmoots,
+          btnPercent, btnNegate, btnMc, btnMr, btnMplus, btnMminus;
 
 
    /*
@@ -486,6 +487,32 @@ public class GUI extends Application
       double a = operatorCheck();
       ToSmoots d = new ToSmoots(a);
       double temp = d.toSmoots();
+      stack.push(temp);
+      updateDisplayDown("" + temp);
+      numWasPressed = false;
+   }
+
+   /**
+    * Handles the percent button
+    */
+   public void handlePercent(ActionEvent ae)
+   {
+      errorCheck("");
+      double a = operatorCheck();
+      double temp = a / 100;
+      stack.push(temp);
+      updateDisplayDown("" + temp);
+      numWasPressed = false;
+   }
+
+   /**
+    * Handles the negate button
+    */
+   public void handleNegate(ActionEvent ae)
+   {
+      errorCheck("");
+      double a = operatorCheck();
+      double temp = a * -1.0;
       stack.push(temp);
       updateDisplayDown("" + temp);
       numWasPressed = false;
