@@ -1,0 +1,139 @@
+.numKey
+{
+    -fx-background-color:#9c9c9ca9;
+    -fx-border-color:#777777;
+    -fx-border-radius:5;
+}
+
+.numKey:hover
+{
+    -fx-background-color:#ad7550a9;
+    -fx-border-color:#777777;
+    -fx-border-radius:5;
+}
+
+.numKey:pressed
+{
+    -fx-border-color:#d36455;
+    -fx-border-radius:5;
+}
+
+.opKey
+{
+    -fx-background-color:#bebebeaf;
+    -fx-border-color:#777777;
+    -fx-border-radius:5;
+}
+
+.opKey:hover
+{
+    -fx-background-color:#ad7550a9;
+    -fx-border-color:#777777;
+    -fx-border-radius:5;
+}
+
+.opKey:pressed
+{
+    -fx-border-color:#d36455;
+    -fx-border-radius:5;
+}
+
+.enterKey
+{
+    -fx-background-color:#8ac5e29d;
+    -fx-border-color:#777777;
+    -fx-border-radius:5;
+}
+
+.enterKey:hover
+{
+    -fx-background-color:#2d7da59d;
+    -fx-border-color:#777777;
+    -fx-border-radius:5;
+}
+
+.enterKey:pressed
+{
+    -fx-border-color:#d36455;
+    -fx-border-radius:5;
+}
+
+.clearKey
+{
+    -fx-background-color:#d3606098;
+    -fx-border-color:#777777;
+    -fx-border-radius:5;
+}
+
+.clearKey:hover
+{
+    -fx-background-color:#b82b2b98;
+    -fx-border-color:#777777;
+    -fx-border-radius:5;
+}
+
+.clearKey:pressed
+{
+    -fx-border-color:#d36455;
+    -fx-border-radius:5;
+}
+
+.memoryKey
+{
+    -fx-background-color:rgba(159, 192, 149, 0.514);
+    -fx-border-color:#777777;
+    -fx-border-radius:5;
+}
+
+.memoryKey:hover
+{
+    -fx-background-color:rgba(103, 133, 93, 0.514);
+    -fx-border-color:#777777;
+    -fx-border-radius:5;
+}
+
+.memoryKey:pressed
+{
+    -fx-border-color:#d36455;
+    -fx-border-radius:5;
+}
+
+.convertKey
+{
+    -fx-background-color:#c9c88aa8;
+    -fx-border-color:#777777;
+    -fx-border-radius:5;
+}
+
+.convertKey:hover
+{
+    -fx-background-color:#a1a175a8;
+    -fx-border-color:#777777;
+    -fx-border-radius:5;
+}
+
+.convertKey:pressed
+{
+    -fx-border-color:#d36455;
+    -fx-border-radius:5;
+}
+
+.stackKey
+{ 
+    -fx-background-color:rgba(165, 165, 165, 0.767);
+    -fx-border-color:#777777;
+    -fx-border-radius:5;
+}
+
+.stackKey:hover
+{
+    -fx-background-color:#ad7550a9;
+    -fx-border-color:#777777;
+    -fx-border-radius:5;
+}
+
+.stackKey:pressed
+{
+    -fx-border-color:#d36455;
+    -fx-border-radius:5;
+}
