@@ -1,9 +1,10 @@
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.Scene;
+import javafx.scene.media.AudioClip;
 import javafx.scene.control.Label;
 import javafx.scene.control.Button;
 import javafx.event.ActionEvent;
@@ -36,6 +37,12 @@ public class GUI extends Application
           btnSin, btnCos, btnTan, btnLn, btnLog, btnMod, btnDegToRadians, btnRadToDegrees, btnFtToSmoots,
           btnPercent, btnNegate, btnMemClear, btnMemRecall, btnMemAdd, btnMemSubtract;
 
+   /*
+    * Audio
+    */
+   AudioClip numClip =  new AudioClip("file:src/sound/click.mp3");
+   AudioClip enterClip = new AudioClip("file:src/sound/press.mp3");
+   AudioClip clearClip = new AudioClip("file:src/sound/tick.mp3");
 
    /*
     * Fields
@@ -143,6 +150,7 @@ public class GUI extends Application
     */
    public void handleEnter(ActionEvent ae)
    {
+      enterClip.play();
       if (lblInputBottom.getText().equals("0"))
       {
       }
@@ -164,6 +172,7 @@ public class GUI extends Application
     */
    public void handleClear(ActionEvent ae)
    {
+      clearClip.play();
       stack.clear();
       lblInputBottom.setText("0");
       lblInputMiddle.setText("");
@@ -177,6 +186,7 @@ public class GUI extends Application
     */
    private double operatorCheck()
    {
+      numClip.play();
       if (numWasPressed || stack.size() == 0)
       {
          return Double.parseDouble(lblInputBottom.getText());
@@ -280,6 +290,7 @@ public class GUI extends Application
     */
    public void handleRollUp(ActionEvent ae)
    {
+      numClip.play();
       errorCheck("");
       if (numWasPressed)
       {
@@ -301,6 +312,7 @@ public class GUI extends Application
     */
    public void handleDrop(ActionEvent ae)
    {
+      clearClip.play();
       errorCheck("");
       if (stack.size() <= 1)
       {
@@ -366,6 +378,7 @@ public class GUI extends Application
     */
    public void handlePi(ActionEvent ae)
    {
+      numClip.play();
       errorCheck("");
       if (stack.size() == 0)
       {
@@ -527,6 +540,7 @@ public class GUI extends Application
     */
    private double memoryCheck()
    {
+      numClip.play();
       if (numWasPressed || stack.size() == 0)
       {
          double temp = Double.parseDouble(lblInputBottom.getText());
@@ -559,6 +573,7 @@ public class GUI extends Application
     */
    public void handleMemClear(ActionEvent ae)
    {
+      numClip.play();
       memory = 0;
       updateMemoryDisplay();
    }
@@ -590,6 +605,7 @@ public class GUI extends Application
     */
    public void handleMemRecall(ActionEvent ae)
    {
+      numClip.play();
       stack.push(memory);
       updateDisplay();
       numWasPressed = false;
@@ -601,6 +617,7 @@ public class GUI extends Application
     */
    private void keypadNum(String s)
    {
+      numClip.play();
       if (!numWasPressed && stack.size() > 0)
       {
          updateDisplayUp();
@@ -626,6 +643,7 @@ public class GUI extends Application
     */
    public void handleDot(ActionEvent ae)
    {
+      numClip.play();
       if (!numWasPressed && !lblInputBottom.getText().equals("0"))
       {
          stack.push(Double.parseDouble(lblInputBottom.getText()));

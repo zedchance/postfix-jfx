@@ -11,7 +11,7 @@
    <children>
       <ImageView fitHeight="403.0" fitWidth="601.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@bg.png" />
+            <Image url="@images/bg.png" />
          </image>
       </ImageView>
       <Label fx:id="lblInputBottom" alignment="CENTER_RIGHT" layoutX="87.0" layoutY="81.0" prefHeight="17.0" prefWidth="314.0" text="0" textOverrun="LEADING_ELLIPSIS">
@@ -176,7 +176,7 @@
       </Button>
       <Button fx:id="btnFtToSmoots" layoutX="7.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleFeetToSmoots" prefHeight="47.0" prefWidth="118.0" text="Ft &gt; Smoots" textOverrun="CLIP">
          <font>
-            <Font size="18.0" />
+            <Font size="17.0" />
          </font>
       </Button>
       <Button fx:id="btnNegate" layoutX="302.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleNegate" prefHeight="47.0" prefWidth="59.0" text="+/-">
