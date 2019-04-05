@@ -85,7 +85,7 @@
       </Button>
       <Button fx:id="btnCos" layoutX="125.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleCos" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="cos" textOverrun="CLIP">
          <font>
-            <Font size="19.0" />
+            <Font size="18.0" />
          </font>
       </Button>
       <Button fx:id="btnDegToRadians" layoutX="7.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleDegreesToRads" prefHeight="47.0" prefWidth="118.0" styleClass="convertKey" stylesheets="@gui-style.css" text="Deg &gt; Rad" textOverrun="CLIP">
