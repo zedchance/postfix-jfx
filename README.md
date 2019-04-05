@@ -9,6 +9,13 @@
 *PostfixGUI.java* is the postfix expression evaluator  
 *GUI.java* is the postfix calculator  
 
+To run in IntelliJ:  
+Edit run configuration's VM options to include replacing `/path/to` with proper path
+```
+--module-path /path/to/javafx-sdk-11.0.2/lib --add-modules javafx.fxml,javafx.controls,javafx.media
+```
+
+
 ## Postfix expressions
 | Operator | Description                                |
 | -------- | ------------------------------------------ |
