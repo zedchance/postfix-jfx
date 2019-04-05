@@ -30,10 +30,10 @@
          <font>
             <Font name="3270-Medium" size="13.0" />
          </font></Label>
-      <Button fx:id="btnRollDown" layoutX="420.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleRollDown" prefHeight="27.0" prefWidth="59.0" styleClass="stackKey" stylesheets="@gui-style.css" text="Roll ↓" />
-      <Button fx:id="btnRollUp" layoutX="420.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleRollUp" prefHeight="27.0" prefWidth="59.0" styleClass="stackKey" stylesheets="@gui-style.css" text="Roll ↑" />
-      <Button fx:id="btnDrop" layoutX="420.0" layoutY="103.0" mnemonicParsing="false" onAction="#handleDrop" prefHeight="27.0" prefWidth="59.0" styleClass="stackKey" stylesheets="@gui-style.css" text="Drop" />
-      <Button fx:id="btnSwap" layoutX="420.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleSwap" prefHeight="27.0" prefWidth="59.0" styleClass="stackKey" stylesheets="@gui-style.css" text="Swap" />
+      <Button fx:id="btnRollDown" layoutX="420.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleRollDown" prefHeight="27.0" prefWidth="59.0" styleClass="stackKey" stylesheets="@gui-style.css" text="Roll ↓" />
+      <Button fx:id="btnRollUp" layoutX="420.0" layoutY="70.0" mnemonicParsing="false" onAction="#handleRollUp" prefHeight="27.0" prefWidth="59.0" styleClass="stackKey" stylesheets="@gui-style.css" text="Roll ↑" />
+      <Button fx:id="btnDrop" layoutX="420.0" layoutY="101.0" mnemonicParsing="false" onAction="#handleDrop" prefHeight="27.0" prefWidth="59.0" styleClass="stackKey" stylesheets="@gui-style.css" text="Drop" />
+      <Button fx:id="btnSwap" layoutX="420.0" layoutY="7.0" mnemonicParsing="false" onAction="#handleSwap" prefHeight="27.0" prefWidth="59.0" styleClass="stackKey" stylesheets="@gui-style.css" text="Swap" />
       <Button fx:id="btnMemRecall" layoutX="184.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleMemRecall" prefHeight="47.0" prefWidth="59.0" styleClass="memoryKey" stylesheets="@gui-style.css" text="mr">
          <font>
             <Font size="20.0" />

@@ -172,6 +172,7 @@ public class GUI extends Application
     */
    public void handleClear(ActionEvent ae)
    {
+      errorCheck("");
       clearClip.play();
       stack.clear();
       lblInputBottom.setText("0");
@@ -605,13 +606,19 @@ public class GUI extends Application
     */
    public void handleMemRecall(ActionEvent ae)
    {
-      if (numWasPressed || stack.size() == 0)
+      numClip.play();
+      if (numWasPressed)
       {
          stack.push(Double.parseDouble(lblInputBottom.getText()));
       }
-      numClip.play();
-      stack.push(memory);
-      updateDisplay();
+      if (memory == 0)
+      {
+      }
+      else
+      {
+         stack.push(memory);
+         updateDisplay();
+      }
       numWasPressed = false;
    }
 
