@@ -1,8 +1,8 @@
 import javafx.application.Application;
+import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.Button;
@@ -101,7 +101,7 @@ public class GUI extends Application
    }
 
    /**
-    * Updates the visual stack in the downwards direction (poping)
+    * Updates the visual stack in the downwards direction (popping)
     */
    private void updateDisplayDown(String s)
    {
@@ -172,7 +172,7 @@ public class GUI extends Application
    }
 
    /**
-    * Operator check
+    * Operator check (decides whether to parse or pop)
     * (factored out)
     */
    private double operatorCheck()
@@ -601,7 +601,6 @@ public class GUI extends Application
     */
    private void keypadNum(String s)
    {
-
       if (!numWasPressed && stack.size() > 0)
       {
          updateDisplayUp();
@@ -627,7 +626,6 @@ public class GUI extends Application
     */
    public void handleDot(ActionEvent ae)
    {
-
       if (!numWasPressed && !lblInputBottom.getText().equals("0"))
       {
          stack.push(Double.parseDouble(lblInputBottom.getText()));

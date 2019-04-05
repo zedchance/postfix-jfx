@@ -4,6 +4,8 @@
 **DATE**: 20190403  
 **AUTHORS**: Zed Chance  
 
+![demo](demo.png)
+
 *PostfixGUI.java* is the postfix expression evaluator  
 *GUI.java* is the postfix calculator  
 
