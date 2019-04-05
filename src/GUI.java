@@ -40,16 +40,16 @@ public class GUI extends Application
    /*
     * Audio
     */
-   AudioClip numClip =  new AudioClip("file:src/sound/click.mp3");
-   AudioClip enterClip = new AudioClip("file:src/sound/press.mp3");
-   AudioClip clearClip = new AudioClip("file:src/sound/tick.mp3");
+   private AudioClip numClip =  new AudioClip("file:src/sound/click.mp3");
+   private AudioClip enterClip = new AudioClip("file:src/sound/press.mp3");
+   private AudioClip clearClip = new AudioClip("file:src/sound/tick.mp3");
 
    /*
     * Fields
     */
-   Stack<Double> stack = new Stack<>();
-   double memory = 0;
-   boolean numWasPressed = false;
+   private Stack<Double> stack = new Stack<>();
+   private double memory = 0;
+   private boolean numWasPressed = false;
 
    public void start(Stage window) throws IOException
    {
