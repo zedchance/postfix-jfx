@@ -192,6 +192,10 @@ public class GUI extends Application
       {
          return Double.parseDouble(lblInputBottom.getText());
       }
+      else if (lblInputBottom.getText().equals("0"))
+      {
+         return 0.0;
+      }
       else
       {
          return stack.pop();
