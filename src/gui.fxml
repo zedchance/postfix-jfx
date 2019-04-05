@@ -14,15 +14,15 @@
             <Image url="@images/bg.png" />
          </image>
       </ImageView>
-      <Label fx:id="lblInputBottom" alignment="CENTER_RIGHT" layoutX="87.0" layoutY="81.0" prefHeight="17.0" prefWidth="314.0" text="0" textOverrun="LEADING_ELLIPSIS">
+      <Label fx:id="lblInputBottom" alignment="CENTER_RIGHT" layoutX="23.0" layoutY="81.0" prefHeight="25.0" prefWidth="378.0" text="0" textOverrun="LEADING_ELLIPSIS">
          <font>
             <Font name="3270-Medium" size="24.0" />
          </font></Label>
-      <Label fx:id="lblInputMiddle" alignment="CENTER_RIGHT" layoutX="87.0" layoutY="50.0" prefHeight="17.0" prefWidth="314.0" textOverrun="LEADING_ELLIPSIS">
+      <Label fx:id="lblInputMiddle" alignment="CENTER_RIGHT" layoutX="23.0" layoutY="50.0" prefHeight="25.0" prefWidth="378.0" textOverrun="LEADING_ELLIPSIS">
          <font>
             <Font name="3270-Medium" size="24.0" />
          </font></Label>
-      <Label fx:id="lblInputTop" alignment="CENTER_RIGHT" layoutX="87.0" layoutY="18.0" prefHeight="17.0" prefWidth="314.0" textOverrun="LEADING_ELLIPSIS">
+      <Label fx:id="lblInputTop" alignment="CENTER_RIGHT" layoutX="23.0" layoutY="18.0" prefHeight="25.0" prefWidth="378.0" textOverrun="LEADING_ELLIPSIS">
          <font>
             <Font name="3270-Medium" size="24.0" />
          </font></Label>
@@ -101,7 +101,7 @@
             <Font size="20.0" />
          </font>
       </Button>
-      <Label fx:id="lblError" layoutX="21.0" layoutY="13.0" prefHeight="17.0" prefWidth="281.0" textFill="RED">
+      <Label fx:id="lblError" alignment="CENTER_RIGHT" layoutX="123.0" layoutY="108.0" prefHeight="17.0" prefWidth="281.0" textFill="#8d0000">
          <font>
             <Font name="3270-Medium" size="13.0" />
          </font></Label>
