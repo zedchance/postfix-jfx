@@ -46,3 +46,4 @@
 - Background image
 - Sound effects
 - Memory
+- Keyboard bindings
