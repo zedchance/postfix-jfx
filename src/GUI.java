@@ -605,6 +605,10 @@ public class GUI extends Application
     */
    public void handleMemRecall(ActionEvent ae)
    {
+      if (numWasPressed || stack.size() == 0)
+      {
+         stack.push(Double.parseDouble(lblInputBottom.getText()));
+      }
       numClip.play();
       stack.push(memory);
       updateDisplay();
