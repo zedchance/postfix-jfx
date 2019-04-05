@@ -10,11 +10,11 @@
 *GUI.java* is the postfix calculator  
 
 To run in IntelliJ:  
-Edit run configuration's VM options to include replacing `/path/to` with proper path
+Edit the run configuration VM options to include: 
 ```
 --module-path /path/to/javafx-sdk-11.0.2/lib --add-modules javafx.fxml,javafx.controls,javafx.media
 ```
-
+replacing `/path/to` with proper path
 
 ## Postfix expressions
 | Operator | Description                                |
