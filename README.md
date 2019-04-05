@@ -56,3 +56,7 @@ replacing `/path/to` with proper path
 - Sound effects
 - Memory
 - Keyboard bindings
+    - Numbers `0-9` and operators `+` `-` `*` `/`
+    - `^` for exponent, `%` for mod
+    - `enter` to push, `delete` to drop
+    - `s` toggles sound

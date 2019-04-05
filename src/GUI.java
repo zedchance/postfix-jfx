@@ -50,6 +50,7 @@ public class GUI extends Application
    private Stack<Double> stack = new Stack<>();
    private double memory = 0;
    private boolean numWasPressed = false;
+   private boolean soundOn = true;
 
    public void start(Stage window) throws IOException
    {
@@ -150,7 +151,11 @@ public class GUI extends Application
     */
    public void handleEnter(ActionEvent ae)
    {
-      enterClip.play();
+      errorCheck("");
+      if (soundOn)
+      {
+         enterClip.play();
+      }
       if (lblInputBottom.getText().equals("0"))
       {
       }
@@ -173,7 +178,10 @@ public class GUI extends Application
    public void handleClear(ActionEvent ae)
    {
       errorCheck("");
-      clearClip.play();
+      if (soundOn)
+      {
+         clearClip.play();
+      }
       stack.clear();
       lblInputBottom.setText("0");
       lblInputMiddle.setText("");
@@ -187,7 +195,10 @@ public class GUI extends Application
     */
    private double operatorCheck()
    {
-      numClip.play();
+      if(soundOn)
+      {
+         numClip.play();
+      }
       if (numWasPressed || stack.size() == 0)
       {
          return Double.parseDouble(lblInputBottom.getText());
@@ -317,7 +328,10 @@ public class GUI extends Application
     */
    public void handleDrop(ActionEvent ae)
    {
-      clearClip.play();
+      if (soundOn)
+      {
+         clearClip.play();
+      }
       errorCheck("");
       if (stack.size() <= 1)
       {
@@ -383,7 +397,10 @@ public class GUI extends Application
     */
    public void handlePi(ActionEvent ae)
    {
-      numClip.play();
+      if (soundOn)
+      {
+         numClip.play();
+      }
       errorCheck("");
       if (stack.size() == 0)
       {
@@ -545,7 +562,10 @@ public class GUI extends Application
     */
    private double memoryCheck()
    {
-      numClip.play();
+      if (soundOn)
+      {
+         numClip.play();
+      }
       if (numWasPressed || stack.size() == 0)
       {
          double temp = Double.parseDouble(lblInputBottom.getText());
@@ -578,7 +598,10 @@ public class GUI extends Application
     */
    public void handleMemClear(ActionEvent ae)
    {
-      numClip.play();
+      if (soundOn)
+      {
+         numClip.play();
+      }
       memory = 0;
       updateMemoryDisplay();
    }
@@ -610,7 +633,10 @@ public class GUI extends Application
     */
    public void handleMemRecall(ActionEvent ae)
    {
-      numClip.play();
+      if (soundOn)
+      {
+         numClip.play();
+      }
       if (numWasPressed)
       {
          stack.push(Double.parseDouble(lblInputBottom.getText()));
@@ -632,7 +658,10 @@ public class GUI extends Application
     */
    private void keypadNum(String s)
    {
-      numClip.play();
+      if (soundOn)
+      {
+         numClip.play();
+      }
       if (!numWasPressed && stack.size() > 0)
       {
          updateDisplayUp();
@@ -658,7 +687,10 @@ public class GUI extends Application
     */
    public void handleDot(ActionEvent ae)
    {
-      numClip.play();
+      if (soundOn)
+      {
+         numClip.play();
+      }
       if (!numWasPressed && !lblInputBottom.getText().equals("0"))
       {
          stack.push(Double.parseDouble(lblInputBottom.getText()));
@@ -768,7 +800,7 @@ public class GUI extends Application
       {
          btnAdd.fire();
       }
-      else if (e.getCode() == KeyCode.SUBTRACT || e.isShiftDown() && e.getCode() == KeyCode.MINUS)
+      else if (e.getCode() == KeyCode.SUBTRACT || !e.isShiftDown() && e.getCode() == KeyCode.MINUS)
       {
          btnSubtract.fire();
       }
@@ -835,6 +867,19 @@ public class GUI extends Application
       else if (e.getCode() == KeyCode.BACK_SPACE)
       {
          btnDrop.fire();
+      }
+      else if (e.getCode() == KeyCode.S)
+      {
+         soundOn = !soundOn;
+         if (soundOn)
+         {
+            lblError.setText("Sound on");
+            numClip.play();
+         }
+         else
+         {
+            lblError.setText("Sound off");
+         }
       }
    }
 }
