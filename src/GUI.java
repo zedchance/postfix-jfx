@@ -540,7 +540,7 @@ public class GUI extends Application
    /**
     * Updates the memory display
     */
-   public void updateMemoryDisplay()
+   private void updateMemoryDisplay()
    {
       if (memory == 0)
       {
