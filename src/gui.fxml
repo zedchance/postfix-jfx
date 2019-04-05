@@ -26,169 +26,14 @@
          <font>
             <Font name="3270-Medium" size="24.0" />
          </font></Label>
-      <Button fx:id="btnDivide" layoutX="420.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleDivide" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="/">
-         <font>
-            <Font size="20.0" />
-         </font></Button>
-      <Button fx:id="btnMultiply" layoutX="420.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleMultiply" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="*">
-         <font>
-            <Font size="20.0" />
-         </font></Button>
-      <Button fx:id="btnSubtract" layoutX="420.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleSubtract" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="-">
-         <font>
-            <Font size="20.0" />
-         </font></Button>
-      <Button fx:id="btnAdd" layoutX="420.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="+">
-         <font>
-            <Font size="20.0" />
-         </font></Button>
-      <Button fx:id="btnEnter" defaultButton="true" layoutX="420.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleEnter" prefHeight="47.0" prefWidth="59.0" styleClass="enterKey" stylesheets="@gui-style.css" text="enter" textOverrun="CLIP">
-         <font>
-            <Font size="14.0" />
-         </font></Button>
-      <Button fx:id="btnNine" layoutX="361.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleNine" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="9">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnEight" layoutX="302.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleEight" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="8">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnSeven" layoutX="243.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleSeven" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="7">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnSix" layoutX="361.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleSix" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="6">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnFive" layoutX="302.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleFive" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="5">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnFour" layoutX="243.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleFour" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="4">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnThree" layoutX="361.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleThree" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="3">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnTwo" layoutX="302.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleTwo" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="2">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnOne" layoutX="243.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleOne" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="1">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnDot" layoutX="361.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleDot" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text=".">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnZero" layoutX="243.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleZero" prefHeight="47.0" prefWidth="118.0" styleClass="numKey" stylesheets="@gui-style.css" text="0">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
       <Label fx:id="lblError" alignment="CENTER_RIGHT" layoutX="123.0" layoutY="108.0" prefHeight="17.0" prefWidth="281.0" textFill="#8d0000">
          <font>
             <Font name="3270-Medium" size="13.0" />
          </font></Label>
-      <Button fx:id="btnClear" layoutX="243.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleClear" prefHeight="47.0" prefWidth="59.0" styleClass="clearKey" stylesheets="@gui-style.css" text="C">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
       <Button fx:id="btnRollDown" layoutX="420.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleRollDown" prefHeight="27.0" prefWidth="59.0" styleClass="stackKey" stylesheets="@gui-style.css" text="Roll ↓" />
       <Button fx:id="btnRollUp" layoutX="420.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleRollUp" prefHeight="27.0" prefWidth="59.0" styleClass="stackKey" stylesheets="@gui-style.css" text="Roll ↑" />
       <Button fx:id="btnDrop" layoutX="420.0" layoutY="103.0" mnemonicParsing="false" onAction="#handleDrop" prefHeight="27.0" prefWidth="59.0" styleClass="stackKey" stylesheets="@gui-style.css" text="Drop" />
       <Button fx:id="btnSwap" layoutX="420.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleSwap" prefHeight="27.0" prefWidth="59.0" styleClass="stackKey" stylesheets="@gui-style.css" text="Swap" />
-      <Button fx:id="btnExponent" layoutX="184.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleExponent" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="^">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnSqrt" layoutX="184.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleSqrt" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="√">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnFactorial" layoutX="184.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleFactorial" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="!">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnPi" layoutX="184.0" layoutY="323.0" mnemonicParsing="false" onAction="#handlePi" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="Pi">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnSin" layoutX="125.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleSin" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="sin">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnCos" layoutX="125.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleCos" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="cos" textOverrun="CLIP">
-         <font>
-            <Font size="19.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnTan" layoutX="125.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleTan" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="tan" textOverrun="CLIP">
-         <font>
-            <Font size="19.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnMod" layoutX="125.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleMod" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="mod" textOverrun="CLIP">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnLn" layoutX="66.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleLn" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="ln">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnLog" layoutX="7.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleLog" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="log" textOverrun="CLIP">
-         <font>
-            <Font size="19.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnDegToRadians" layoutX="7.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleDegreesToRads" prefHeight="47.0" prefWidth="118.0" styleClass="convertKey" stylesheets="@gui-style.css" text="Deg &gt; Rad" textOverrun="CLIP">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnRadToDegrees" layoutX="7.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleRadsToDegrees" prefHeight="47.0" prefWidth="118.0" styleClass="convertKey" stylesheets="@gui-style.css" text="Rad &gt; Deg" textOverrun="CLIP">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnFtToSmoots" layoutX="7.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleFeetToSmoots" prefHeight="47.0" prefWidth="118.0" styleClass="convertKey" stylesheets="@gui-style.css" text="Ft &gt; Smoots" textOverrun="CLIP">
-         <font>
-            <Font size="17.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnNegate" layoutX="302.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleNegate" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="+/-" textOverrun="CLIP">
-         <font>
-            <Font size="19.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnPercent" layoutX="361.0" layoutY="135.0" mnemonicParsing="false" onAction="#handlePercent" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="\%">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
       <Button fx:id="btnMemRecall" layoutX="184.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleMemRecall" prefHeight="47.0" prefWidth="59.0" styleClass="memoryKey" stylesheets="@gui-style.css" text="mr">
          <font>
             <Font size="20.0" />
@@ -213,5 +58,160 @@
          <font>
             <Font name="3270-Medium" size="13.0" />
          </font></Label>
+      <Button fx:id="btnExponent" layoutX="184.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleExponent" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="^">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSin" layoutX="125.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleSin" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="sin">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLn" layoutX="66.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleLn" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="ln">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLog" layoutX="7.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleLog" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="log" textOverrun="CLIP">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSqrt" layoutX="184.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleSqrt" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="√">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCos" layoutX="125.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleCos" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="cos" textOverrun="CLIP">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDegToRadians" layoutX="7.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleDegreesToRads" prefHeight="47.0" prefWidth="118.0" styleClass="convertKey" stylesheets="@gui-style.css" text="Deg &gt; Rad" textOverrun="CLIP">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnFactorial" layoutX="184.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleFactorial" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="!">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnTan" layoutX="125.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleTan" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="tan" textOverrun="CLIP">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRadToDegrees" layoutX="7.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleRadsToDegrees" prefHeight="47.0" prefWidth="118.0" styleClass="convertKey" stylesheets="@gui-style.css" text="Rad &gt; Deg" textOverrun="CLIP">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPi" layoutX="184.0" layoutY="323.0" mnemonicParsing="false" onAction="#handlePi" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="Pi">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMod" layoutX="125.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleMod" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="mod" textOverrun="CLIP">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnFtToSmoots" layoutX="7.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleFeetToSmoots" prefHeight="47.0" prefWidth="118.0" styleClass="convertKey" stylesheets="@gui-style.css" text="Ft &gt; Smoots" textOverrun="CLIP">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDivide" layoutX="420.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleDivide" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="/">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="btnClear" layoutX="243.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleClear" prefHeight="47.0" prefWidth="59.0" styleClass="clearKey" stylesheets="@gui-style.css" text="C">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNegate" layoutX="302.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleNegate" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="+/-" textOverrun="CLIP">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPercent" layoutX="361.0" layoutY="135.0" mnemonicParsing="false" onAction="#handlePercent" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="\%">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMultiply" layoutX="420.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleMultiply" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="*">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="btnNine" layoutX="361.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleNine" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="9">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEight" layoutX="302.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleEight" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSeven" layoutX="243.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleSeven" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="7">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSubtract" layoutX="420.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleSubtract" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="-">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="btnSix" layoutX="361.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleSix" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="6">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnFive" layoutX="302.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleFive" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnFour" layoutX="243.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleFour" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAdd" layoutX="420.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="47.0" prefWidth="59.0" styleClass="opKey" stylesheets="@gui-style.css" text="+">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="btnThree" layoutX="361.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleThree" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnTwo" layoutX="302.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleTwo" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnOne" layoutX="243.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleOne" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text="1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEnter" defaultButton="true" layoutX="420.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleEnter" prefHeight="47.0" prefWidth="59.0" styleClass="enterKey" stylesheets="@gui-style.css" text="enter" textOverrun="CLIP">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnDot" layoutX="361.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleDot" prefHeight="47.0" prefWidth="59.0" styleClass="numKey" stylesheets="@gui-style.css" text=".">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnZero" layoutX="243.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleZero" prefHeight="47.0" prefWidth="118.0" styleClass="numKey" stylesheets="@gui-style.css" text="0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
    </children>
 </Pane>
