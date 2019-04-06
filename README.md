@@ -72,6 +72,6 @@ replacing `/path/to` with proper path
 | `enter`  | push item      |
 | `delete` | drop item      |
 | `\ `     | swap           |
-| `↑`      | roll up        |
-| `↓`      | roll down      |
+| `[`      | roll up        |
+| `]`      | roll down      |
 | `s`      | toggles sound  |

@@ -888,11 +888,11 @@ public class GUI extends Application
       {
          btnSwap.fire();
       }
-      else if (e.getCode() == KeyCode.UP)
+      else if (e.getCode() == KeyCode.OPEN_BRACKET)
       {
          btnRollUp.fire();
       }
-      else if (e.getCode() == KeyCode.DOWN)
+      else if (e.getCode() == KeyCode.CLOSE_BRACKET)
       {
          btnRollDown.fire();
       }
