@@ -306,7 +306,10 @@ public class GUI extends Application
     */
    public void handleRollUp(ActionEvent ae)
    {
-      numClip.play();
+      if (soundOn)
+      {
+         numClip.play();
+      }
       errorCheck("");
       if (numWasPressed)
       {
