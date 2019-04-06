@@ -4,19 +4,10 @@
 **DATE**: 20190403  
 **AUTHORS**: Zed Chance  
 
-![demo](src/images/demo.png)
+## PostfixGUI.java
+A postfix expression evaluator that takes a string as input
 
-*PostfixGUI.java* is the postfix expression evaluator  
-*GUI.java* is the postfix calculator  
-
-To run in IntelliJ:  
-Edit the run configuration VM options to include: 
-```
---module-path /path/to/javafx-sdk-11.0.2/lib --add-modules javafx.fxml,javafx.controls,javafx.media
-```
-replacing `/path/to` with proper path
-
-## Postfix expressions
+### Supported postfix operations
 | Operator | Description                                |
 | -------- | ------------------------------------------ |
 | `+`      | add                                        |
@@ -39,7 +30,19 @@ replacing `/path/to` with proper path
 | `min`    | leaves the lower of 2 values on the stack  |
 | `dist`   | distance formula (distance to origin)      |
 
-## Extra features implemented
+## GUI.java
+A postfix (RPN) calculator GUI that shows stack
+
+![demo](src/images/demo.png)
+
+### To run in IntelliJ 
+Edit the run configuration VM options to include: 
+```
+--module-path /path/to/javafx-sdk-11.0.2/lib --add-modules javafx.fxml,javafx.controls,javafx.media
+```
+replacing `/path/to` with proper path
+
+### Extra features implemented
 - Calculator buttons
 - Stack visualization
 - Factorial (!)
@@ -51,13 +54,24 @@ replacing `/path/to` with proper path
 - Radians to degrees
 - Feet to smoots
 - Error handling
-- ANS Button (on PostfixGUI.java)
 - Background image
 - Sound effects
 - Memory
-- Keyboard bindings
-    - Numbers `0-9` and operators `+` `-` `*` `/`
-    - `^` for exponent, `%` for mod
-    - `enter` to push, `delete` to drop
-    - `\ ` to swap, `↑` roll up, `↓` roll down
-    - `s` toggles sound
+
+
+### Keyboard bindings
+| Key      | Operation      |
+| -------- | -------------- |
+| `0-9`    | numbers        |
+| `+`      | addition       |
+| `-`      | subtraction    |
+| `*`      | multiplication |
+| `/`      | division       |
+| `^`      | exponent       |
+| `%`      | modulo         |
+| `enter`  | push item      |
+| `delete` | drop item      |
+| `\ `     | swap           |
+| `↑`      | roll up        |
+| `↓`      | roll down      |
+| `s`      | toggles sound  |
