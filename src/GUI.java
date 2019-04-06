@@ -68,7 +68,7 @@ public class GUI extends Application
     */
    private void updateDisplay()
    {
-      lblInputBottom.setText("");
+      lblInputBottom.setText("0");
       lblInputMiddle.setText("");
       lblInputTop.setText("");
       int size = stack.size();
@@ -341,7 +341,7 @@ public class GUI extends Application
       }
       else
       {
-         if (stack.size() == 1)
+         if (stack.size() <= 1)
          {
             btnClear.fire();
          }
