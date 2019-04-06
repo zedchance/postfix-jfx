@@ -59,4 +59,5 @@ replacing `/path/to` with proper path
     - Numbers `0-9` and operators `+` `-` `*` `/`
     - `^` for exponent, `%` for mod
     - `enter` to push, `delete` to drop
+    - `\ ` to swap, `↑` roll up, `↓` roll down
     - `s` toggles sound

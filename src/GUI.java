@@ -336,15 +336,15 @@ public class GUI extends Application
          clearClip.play();
       }
       errorCheck("");
-      if (stack.size() <= 1)
-      {
-         btnClear.fire();
-      }
       if (numWasPressed)
       {
       }
       else
       {
+         if (stack.size() == 1)
+         {
+            btnClear.fire();
+         }
          stack.pop();
       }
       updateDisplay();
@@ -883,6 +883,18 @@ public class GUI extends Application
          {
             lblError.setText("Sound off");
          }
+      }
+      else if (e.getCode() == KeyCode.BACK_SLASH)
+      {
+         btnSwap.fire();
+      }
+      else if (e.getCode() == KeyCode.UP)
+      {
+         btnRollUp.fire();
+      }
+      else if (e.getCode() == KeyCode.DOWN)
+      {
+         btnRollDown.fire();
       }
    }
 }
