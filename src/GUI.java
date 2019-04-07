@@ -759,7 +759,7 @@ public class GUI extends Application
    /**
     * Handles sound
     */
-   public void playSound(AudioClip a)
+   private void playSound(AudioClip a)
    {
       if (soundOn)
       {

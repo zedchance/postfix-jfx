@@ -5,15 +5,14 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="179.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PostfixGUI">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="119.0" prefWidth="445.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PostfixGUI">
    <children>
-      <Label layoutX="35.0" layoutY="37.0" text="Input" />
-      <Label layoutX="35.0" layoutY="80.0" text="Output" />
-      <TextField fx:id="tfInput" layoutX="95.0" layoutY="32.0" promptText="1 2 +" />
-      <Button fx:id="btnCalculate" defaultButton="true" layoutX="297.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleCalculate" text="Calculate" />
-      <Button fx:id="btnClear" layoutX="297.0" layoutY="75.0" mnemonicParsing="false" onAction="#handleReset" text="Clear" />
-      <Button fx:id="btnAns" layoutX="297.0" layoutY="119.0" mnemonicParsing="false" onAction="#handleAns" text="ANS" />
+      <Label layoutX="37.0" layoutY="30.0" text="Input" />
+      <Label layoutX="37.0" layoutY="73.0" text="Output" />
+      <TextField fx:id="tfInput" layoutX="97.0" layoutY="25.0" promptText="1 2 +" />
+      <Button fx:id="btnCalculate" defaultButton="true" layoutX="299.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleCalculate" prefHeight="27.0" prefWidth="109.0" text="Calculate" />
+      <Button fx:id="btnClear" layoutX="299.0" layoutY="68.0" mnemonicParsing="false" onAction="#handleReset" text="Clear" />
+      <Button fx:id="btnAns" layoutX="363.0" layoutY="68.0" mnemonicParsing="false" onAction="#handleAns" text="ANS" />
       <Label fx:id="lblAnswer" layoutX="95.0" layoutY="80.0" prefHeight="17.0" prefWidth="167.0" />
    </children>
 </Pane>
