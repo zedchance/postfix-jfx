@@ -152,10 +152,7 @@ public class GUI extends Application
    public void handleEnter(ActionEvent ae)
    {
       errorCheck("");
-      if (soundOn)
-      {
-         enterClip.play();
-      }
+      playSound(enterClip);
       if (lblInputBottom.getText().equals("0"))
       {
       }
@@ -178,10 +175,7 @@ public class GUI extends Application
    public void handleClear(ActionEvent ae)
    {
       errorCheck("");
-      if (soundOn)
-      {
-         clearClip.play();
-      }
+      playSound(clearClip);
       stack.clear();
       lblInputBottom.setText("0");
       lblInputMiddle.setText("");
@@ -195,10 +189,7 @@ public class GUI extends Application
     */
    private double operatorCheck()
    {
-      if(soundOn)
-      {
-         numClip.play();
-      }
+      playSound(numClip);
       if (numWasPressed || stack.size() == 0)
       {
          return Double.parseDouble(lblInputBottom.getText());
@@ -306,10 +297,7 @@ public class GUI extends Application
     */
    public void handleRollUp(ActionEvent ae)
    {
-      if (soundOn)
-      {
-         numClip.play();
-      }
+      playSound(numClip);
       errorCheck("");
       if (numWasPressed)
       {
@@ -331,10 +319,7 @@ public class GUI extends Application
     */
    public void handleDrop(ActionEvent ae)
    {
-      if (soundOn)
-      {
-         clearClip.play();
-      }
+      playSound(clearClip);
       errorCheck("");
       if (numWasPressed)
       {
@@ -400,10 +385,7 @@ public class GUI extends Application
     */
    public void handlePi(ActionEvent ae)
    {
-      if (soundOn)
-      {
-         numClip.play();
-      }
+      playSound(numClip);
       errorCheck("");
       if (stack.size() == 0)
       {
@@ -565,10 +547,7 @@ public class GUI extends Application
     */
    private double memoryCheck()
    {
-      if (soundOn)
-      {
-         numClip.play();
-      }
+      playSound(numClip);
       if (numWasPressed || stack.size() == 0)
       {
          double temp = Double.parseDouble(lblInputBottom.getText());
@@ -601,10 +580,7 @@ public class GUI extends Application
     */
    public void handleMemClear(ActionEvent ae)
    {
-      if (soundOn)
-      {
-         numClip.play();
-      }
+      playSound(numClip);
       memory = 0;
       updateMemoryDisplay();
    }
@@ -636,10 +612,7 @@ public class GUI extends Application
     */
    public void handleMemRecall(ActionEvent ae)
    {
-      if (soundOn)
-      {
-         numClip.play();
-      }
+      playSound(numClip);
       if (numWasPressed)
       {
          stack.push(Double.parseDouble(lblInputBottom.getText()));
@@ -661,10 +634,7 @@ public class GUI extends Application
     */
    private void keypadNum(String s)
    {
-      if (soundOn)
-      {
-         numClip.play();
-      }
+      playSound(numClip);
       if (!numWasPressed && stack.size() > 0)
       {
          updateDisplayUp();
@@ -690,10 +660,7 @@ public class GUI extends Application
     */
    public void handleDot(ActionEvent ae)
    {
-      if (soundOn)
-      {
-         numClip.play();
-      }
+      playSound(numClip);
       if (!numWasPressed && !lblInputBottom.getText().equals("0"))
       {
          stack.push(Double.parseDouble(lblInputBottom.getText()));
@@ -787,6 +754,17 @@ public class GUI extends Application
    public void handleNine(ActionEvent ae)
    {
       keypadNum("9");
+   }
+
+   /**
+    * Handles sound
+    */
+   public void playSound(AudioClip a)
+   {
+      if (soundOn)
+      {
+         a.play();
+      }
    }
 
    /**
