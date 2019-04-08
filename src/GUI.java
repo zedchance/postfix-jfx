@@ -583,6 +583,7 @@ public class GUI extends Application
       playSound(numClip);
       memory = 0;
       updateMemoryDisplay();
+      numWasPressed = false;
    }
 
    /**
