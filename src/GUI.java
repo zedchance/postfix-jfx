@@ -328,7 +328,14 @@ public class GUI extends Application
       {
          if (stack.size() <= 1)
          {
-            btnClear.fire();
+            if (lblInputMiddle.getText().equals(""))
+            {
+               btnClear.fire();
+            }
+            else
+            {
+               lblInputBottom.setText(lblInputMiddle.getText());
+            }
          }
          else if (lblInputBottom.getText().equals("0") && stack.size() > 1)
          {
