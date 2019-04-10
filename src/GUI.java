@@ -330,7 +330,14 @@ public class GUI extends Application
          {
             btnClear.fire();
          }
-         stack.pop();
+         else if (lblInputBottom.getText().equals("0") && stack.size() > 1)
+         {
+            updateDisplayDown("" + stack.peek());
+         }
+         else
+         {
+            stack.pop();
+         }
       }
       updateDisplay();
       numWasPressed = false;
