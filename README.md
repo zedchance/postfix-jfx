@@ -35,12 +35,12 @@ A postfix (RPN) calculator GUI that shows stack
 
 ![demo](src/images/demo.png)
 
-### To run in IntelliJ 
-Edit the run configuration VM options to include: 
+### To run in IntelliJ
+Edit the run configuration VM options to include:
+
 ```
---module-path /path/to/javafx-sdk-11.0.2/lib --add-modules javafx.fxml,javafx.controls,javafx.media
+--module-path jfx-11 --add-modules javafx.fxml,javafx.controls,javafx.media
 ```
-replacing `/path/to` with proper path
 
 ### Extra features implemented
 - Calculator buttons
