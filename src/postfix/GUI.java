@@ -1,3 +1,5 @@
+package postfix;
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
@@ -40,9 +42,9 @@ public class GUI extends Application
    /*
     * Audio
     */
-   private AudioClip numClip =  new AudioClip("file:src/sound/click.mp3");
-   private AudioClip enterClip = new AudioClip("file:src/sound/press.mp3");
-   private AudioClip clearClip = new AudioClip("file:src/sound/tick.mp3");
+   private AudioClip numClip =  new AudioClip("file:src/postfix/sound/click.mp3");
+   private AudioClip enterClip = new AudioClip("file:src/postfix/sound/press.mp3");
+   private AudioClip clearClip = new AudioClip("file:src/postfix/sound/tick.mp3");
 
    /*
     * Fields

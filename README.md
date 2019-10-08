@@ -33,7 +33,7 @@ A postfix expression evaluator that takes a string as input
 ## GUI.java
 A postfix (RPN) calculator GUI that shows stack
 
-![demo](src/images/demo.png)
+![demo](src/postfix/images/demo.png)
 
 ### To run in IntelliJ
 Edit the run configuration VM options to include:

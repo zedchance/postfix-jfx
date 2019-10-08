@@ -1,3 +1,5 @@
+package postfix;
+
 import javafx.application.Application;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
