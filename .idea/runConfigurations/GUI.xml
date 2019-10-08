@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="GUI" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="GUI" />
+    <module name="Postfix-jfx" />
+    <option name="VM_PARAMETERS" value="--module-path jfx-11.0.2 --add-modules javafx.fxml,javafx.controls,javafx.media" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
